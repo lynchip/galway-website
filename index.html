@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galway</title>
+    <title>Galway - Seu Destino na Irlanda</title>
     <style>
         * {
             margin: 0;
@@ -15,56 +15,216 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
         }
         
-        .container {
-            background: white;
-            border-radius: 10px;
-            padding: 60px 40px;
-            max-width: 600px;
-            width: 100%;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 100px 20px;
             text-align: center;
         }
         
-        h1 {
-            font-size: 3rem;
+        header h1 {
+            font-size: 3.5rem;
             margin-bottom: 20px;
-            color: #667eea;
+            font-weight: 700;
         }
         
-        p {
-            font-size: 1.2rem;
-            color: #666;
+        header p {
+            font-size: 1.5rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Sections */
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        
+        section h2 {
+            font-size: 2.5rem;
             margin-bottom: 30px;
+            color: #1e3a8a;
+            text-align: center;
         }
         
-        .status {
+        /* About Section */
+        .about {
+            background: #f8fafc;
+        }
+        
+        .about-content {
+            display: grid;
+            gap: 40px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        /* Attractions Section */
+        .attractions {
+            background: white;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #1e3a8a;
+        }
+        
+        .card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+        
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            color: white;
+        }
+        
+        .contact p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
             display: inline-block;
-            padding: 10px 20px;
-            background: #f0f0f0;
-            border-radius: 5px;
+            background: white;
+            color: #1e3a8a;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
             font-size: 0.9rem;
-            color: #999;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Galway</h1>
-        <p>Your site is now live on GitHub Pages!</p>
-        <div class="status">🚀 Ready to build something amazing</div>
-    </div>
-        <div class="container">
-        <h1>Welcome to Galway</h1>
-        <p>Your site is now live on GitHub Pages!</p>
-        <div class="status">🚀 Ready to build something amazing</div>
-    </div>
+    <!-- Hero Section -->
+    <header>
+        <h1>Descubra Galway</h1>
+        <p>A Cidade Cultural da Irlanda te espera com história, música e paisagens deslumbrantes</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>Por que Galway?</h2>
+        <div class="about-content">
+            <p>
+                Galway é uma cidade vibrante na costa oeste da Irlanda, conhecida por sua rica herança cultural, 
+                música tradicional irlandesa e atmosfera acolhedora. Localizada às margens da Baía de Galway, 
+                a cidade oferece uma mistura perfeita de história medieval e vida moderna.
+            </p>
+            <p>
+                Com suas ruas de paralelepípedos coloridas, pubs tradicionais cheios de música ao vivo, 
+                e a proximidade com as dramáticas paisagens dos Penhascos de Moher e das Ilhas Aran, 
+                Galway é o destino ideal para brasileiros que buscam uma experiência autêntica irlandesa.
+            </p>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="attractions">
+        <h2>O Que Fazer em Galway</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🏰</div>
+                <h3>Centro Medieval</h3>
+                <p>Explore as ruas históricas, a Catedral de Galway e o Spanish Arch, um portão do século XVI que testemunhou séculos de história.</p>
+            </div>
+            
+            <div class="card">
+                <div class="icon">🎵</div>
+                <h3>Música Tradicional</h3>
+                <p>Experimente a autêntica música irlandesa nos pubs tradicionais, especialmente no famoso bairro Latin Quarter.</p>
+            </div>
+            
+            <div class="card">
+                <div class="icon">🌊</div>
+                <h3>Penhascos de Moher</h3>
+                <p>Visite os impressionantes penhascos que se elevam a 214 metros sobre o Oceano Atlântico, a apenas 1 hora de Galway.</p>
+            </div>
+            
+            <div class="card">
+                <div class="icon">🏝️</div>
+                <h3>Ilhas Aran</h3>
+                <p>Descubra as ilhas onde o irlandês ainda é falado, com fortes pré-históricos e paisagens dramáticas.</p>
+            </div>
+            
+            <div class="card">
+                <div class="icon">🍺</div>
+                <h3>Cultura dos Pubs</h3>
+                <p>Desfrute de uma pint de Guinness enquanto conversa com os amigáveis locais em um dos muitos pubs aconchegantes.</p>
+            </div>
+            
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Arte e Festivais</h3>
+                <p>Galway foi Capital Europeia da Cultura em 2020 e oferece festivais durante todo o ano, incluindo o Galway Arts Festival.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Pronto para Sua Aventura?</h2>
+        <p>Comece a planejar sua viagem para a joia da costa oeste irlandesa</p>
+        <a href="mailto:info@galway.com.br" class="cta-button">Entre em Contato</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Galway Tourism | Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
