@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://galway.com.br/sitemap.xml
+
+# SEO Optimized for Brazilian Portuguese speakers interested in Galway, Ireland
+# Keywords: Galway Irlanda, intercambio Galway, escolas ingles Galway, brasileiros Galway
