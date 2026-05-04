@@ -726,6 +726,56 @@ ul {
     font-size: 1rem;
 }
 
+/* Schools Notice - TrustED Ireland */
+.schools-notice {
+    margin-bottom: 2rem;
+}
+
+.notice-content {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    align-items: flex-start;
+}
+
+.notice-icon {
+    font-size: 1.75rem;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.notice-text h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+}
+
+.notice-text p {
+    color: #374151;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.notice-text strong {
+    color: #1e3a8a;
+}
+
+@media (max-width: 768px) {
+    .notice-content {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1.25rem;
+    }
+
+    .notice-icon {
+        font-size: 1.5rem;
+    }
+}
+
 /* ========================================
    COMMUNITY SECTION
    ======================================== */
