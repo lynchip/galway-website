@@ -644,6 +644,60 @@ ul {
     gap: 0.5rem;
 }
 
+@media (min-width: 1025px) {
+    #eventos-destaque .section-header {
+        margin-bottom: 2.5rem;
+    }
+
+    #eventos-destaque .events-showcase {
+        max-width: 1080px;
+        margin: 0 auto;
+        gap: 1.5rem;
+    }
+
+    #eventos-destaque .event-card {
+        display: grid;
+        grid-template-columns: minmax(220px, 36%) 1fr;
+        align-items: stretch;
+    }
+
+    #eventos-destaque .event-card.featured {
+        grid-template-columns: minmax(320px, 48%) 1fr;
+    }
+
+    #eventos-destaque .event-image {
+        min-height: 170px;
+    }
+
+    #eventos-destaque .event-card.featured .event-image {
+        min-height: 240px;
+    }
+
+    #eventos-destaque .event-content {
+        padding: 1.5rem 1.75rem;
+    }
+
+    #eventos-destaque .event-card.featured h3 {
+        font-size: 1.65rem;
+        margin-bottom: 0.85rem;
+    }
+
+    #eventos-destaque .event-card:not(.featured) h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.75rem;
+    }
+
+    #eventos-destaque .event-card p {
+        font-size: 1rem;
+        line-height: 1.65;
+        margin-bottom: 1.1rem;
+    }
+
+    #eventos-destaque .event-highlights {
+        margin-bottom: 1.1rem;
+    }
+}
+
 /* ========================================
    SCHOOLS COMPARISON
    ======================================== */
