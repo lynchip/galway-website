@@ -556,6 +556,12 @@ ul {
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    color: var(--color-white);
 }
 
 .event-image::after {
@@ -575,6 +581,28 @@ ul {
 
 .event-image.summer-galway {
     background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+}
+
+.event-image-visual {
+    position: relative;
+    z-index: 2;
+    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    line-height: 1;
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.25));
+}
+
+.event-image-label {
+    position: relative;
+    z-index: 2;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
 }
 
 .event-content {
@@ -1457,6 +1485,14 @@ ul {
 
     .event-card.featured {
         grid-template-columns: 1fr;
+    }
+
+    .event-image {
+        min-height: 190px;
+    }
+
+    .event-image-label {
+        font-size: 0.85rem;
     }
 
     .schools-comparison {
